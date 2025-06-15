@@ -17,11 +17,11 @@ page "My New PSU Website" (stylesheet="css/main.css", script="js/app.js"):  .. T
             paragraph "${site_motto}" :
             button "Get Started" (onclick="alert('Hello PSU!');") :
 
-    if is_logged_in == true:
+if is_logged_in == true:
         section "dashboard" (class="user-dashboard"):
             heading level=2 "Your Dashboard" :
             paragraph "Welcome back, user!" :
-            link "View Profile" "/profile.html" : .. Example of correct link syntax: display_text then url
+            link "View Profile" "/profile.html" :
     else:
         section "login-prompt" (class="guest-section"):
             paragraph "Please log in." :
