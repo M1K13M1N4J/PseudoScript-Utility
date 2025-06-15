@@ -17,16 +17,6 @@ page "My New PSU Website" (stylesheet="css/main.css", script="js/app.js"):  .. T
             paragraph "${site_motto}" :
             button "Get Started" (onclick="alert('Hello PSU!');") :
 
-if is_logged_in == true:
-        section "dashboard" (class="user-dashboard"):
-            heading level=2 "Your Dashboard" :
-            paragraph "Welcome back, user!" :
-            link "View Profile" "/profile.html" :
-    else:
-        section "login-prompt" (class="guest-section"):
-            paragraph "Please log in." :
-            button "Login" (onclick="console.log('Login clicked');") :
-
     section "features" (class="features-grid"):
         heading level=2 "Our Amazing Features" :
         container (class="grid-items"):
